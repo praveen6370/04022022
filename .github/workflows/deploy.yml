@@ -1,0 +1,20 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Run Web App
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Web App
+        run: |
+          echo "Build Web App"
+          sleep 10s
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+        with:
+          owner: praveen6370
+          repo:  actions
+          github_token: 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
+          workflow_file_name: blank.yml
