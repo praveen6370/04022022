@@ -11,7 +11,7 @@ jobs:
       - name: Build Web App
         run: |
           echo "Build Web App"
-          sleep 11s
+#          sleep 11s
       - uses: actions/checkout@v3
         with:
 #          owner: praveen6370
