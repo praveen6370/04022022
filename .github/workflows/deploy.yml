@@ -14,7 +14,9 @@ jobs:
           sleep 11s
       - uses: actions/checkout@v3
         with:
-          owner: praveen6370
-          repo:  actions
-          github_token: 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
-          workflow_file_name: blank.yml
+#          owner: praveen6370
+#          repo:  actions
+#          github_token: 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
+#          workflow_file_name: blank.yml
+          repository:  actions
+          token: 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
