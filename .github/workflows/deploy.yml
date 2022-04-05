@@ -18,5 +18,5 @@ jobs:
 #          repo:  actions
 #          github_token: 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
 #          workflow_file_name: blank.yml
-          repository:  actions
+          repository: praveen6370/actions
           token: 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
