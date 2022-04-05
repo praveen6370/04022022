@@ -12,7 +12,7 @@ jobs:
         run: |
           echo "Build Web App"
           sleep 11s
-      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+      - uses: actions/checkout@v3
         with:
           owner: praveen6370
           repo:  actions
