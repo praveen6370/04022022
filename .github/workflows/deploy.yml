@@ -12,7 +12,7 @@ jobs:
         run: |
           echo "Build Web App"
           sleep 10s
-      - uses:  praveen6370/actions@v3
+      - uses: praveen6370/actions@v3
         with:
           owner: praveen6370
           repo:  actions
