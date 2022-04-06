@@ -51,8 +51,9 @@ on:
 #
 #      - run: echo ${{ github.event.client_payload.sha }}
 jobs:
-  call-workflow:
-    uses: praveen6370/actions/.github/workflows/blank.yml@main
+  call-workflow-in-another-repo:
+    uses: octo-org/another-repo/.github/workflows/workflow.yml@v1
+
     with:
       username: praveen6370
       github_token: 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
