@@ -8,15 +8,26 @@ jobs:
     name: Run Web App
     runs-on: ubuntu-latest
     steps:
-      - name: Build Web App
-        run: |
-          echo "Build Web App"
-#          sleep 11s
-      - uses: actions/checkout@v3
+      - name: Check out repository
+        uses: actions/checkout@v3
         with:
-#          owner: praveen6370
-#          repo:  actions
-#          github_token: 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
-#          workflow_file_name: blank.yml
           repository: praveen6370/actions
-#          token: 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
+          ref: main
+          token: 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
+          path: ./.github/workflows/
+      - name: Run my action
+        uses: ./.github/workflows/blank.yml
+#
+#    steps:
+#      - name: Build Web App
+#        run: |
+#          echo "Build Web App"
+##          sleep 11s
+#      - uses: actions/checkout@v3
+#        with:
+##          owner: praveen6370
+##          repo:  actions
+##          github_token: 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
+##          workflow_file_name: blank.yml
+#          repository: praveen6370/actions
+##          token: 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
